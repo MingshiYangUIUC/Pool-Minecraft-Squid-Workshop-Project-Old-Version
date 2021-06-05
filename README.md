@@ -33,8 +33,8 @@ Enable it by:
 Try clicking the texts and explore, or wait for the writeup
 
 # How it Works
-Conservation of momentum. Neglected spin of balls, deformations, and interactions with edge of pockets. Assumed friction proportional to speed.
-Haven't consulted any specific reference while making it work. Wait for the writeup or google "billiards physics".
+Conservation of momentum. Neglected spin of balls, deformations, and interactions with edge of pockets. Assumed friction proportional to speed.\
+Haven't consulted any specific references while making it work. Wait for the writeup or search "billiards physics" online.
 
 The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker has been simplified to meet popular common sense.
 
