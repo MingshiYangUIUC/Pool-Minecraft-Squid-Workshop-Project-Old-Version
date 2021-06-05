@@ -30,13 +30,16 @@ Enable it by:
 	/datapack enable "datapackname"
   
 # Usage
-
+Try clicking the texts and explore, or wait for the writeup
 
 # How it Works
+Conservation of momentum. Neglected spin of balls, deformations, and interactions with edge of pockets. Assumed friction proportional to speed.
+Haven't consulted any specific reference while making it work. Wait for the writeup or google "billiards physics".
 
+The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker has been simplified to meet popular common sense.
 
 # Project Tree
-
+Wait for the writeup
 
 # Terms of Use
 Feel free to play around with this datapack. \
