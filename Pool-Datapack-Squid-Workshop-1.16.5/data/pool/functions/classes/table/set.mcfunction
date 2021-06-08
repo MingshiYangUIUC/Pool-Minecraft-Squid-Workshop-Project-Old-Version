@@ -1,3 +1,4 @@
+function pool:classes/table/clear
 tag @s remove swPool_success
 tellraw @s [{"text":"Wait..."}]
 
@@ -70,6 +71,7 @@ execute as @e[tag=swPool_corner] run data merge entity @s {Item:{id:"minecraft:a
 
 #execute as @e[tag=swPool_cloth] at @s run setblock ~ ~-1 ~ glass
 execute as @e[tag=swPool_cloth] at @s run setblock ~ ~ ~ iron_trapdoor[half=top]
+execute as @e[tag=swPool_cloth] at @s if block ~ ~-1 ~ air run setblock ~ ~-1 ~ iron_trapdoor[half=top]
 
 execute as @e[tag=swPool_pxside] at @s run setblock ~1 ~ ~ minecraft:iron_trapdoor[open=true,facing=east]
 execute as @e[tag=swPool_pzside] at @s run setblock ~ ~ ~1 minecraft:iron_trapdoor[open=true,facing=south]
@@ -90,4 +92,4 @@ scoreboard players operation TABLE swPool_sizez = @e[tag=swPool_pooltable,limit=
 execute as @e[tag=swPool_pooltable] store result score TABLE swPool_posx run data get entity @s Pos[0] 10000
 execute as @e[tag=swPool_pooltable] store result score TABLE swPool_posz run data get entity @s Pos[2] 10000
 
-tellraw @s [{"text":"Ready. Click to begin.","color":"gold","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/start"}},{"text":" Force singleplayer.","color":"yellow","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/startsp"}}]
+tellraw @s [{"underlined":true,"text":"<Begin Multiplayer>","color":"gold","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/start"}},{"text":" ","underlined":false},{"underlined":true,"text":"<Begin Singleplayer>","color":"yellow","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/startsp"}}]

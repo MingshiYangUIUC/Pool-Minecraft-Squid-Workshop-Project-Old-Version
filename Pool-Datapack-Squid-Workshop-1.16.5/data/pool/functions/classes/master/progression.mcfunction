@@ -68,8 +68,15 @@ execute if entity @s[scores={swPool_firsthit=7}] run tellraw @a[tag=swPool_poolp
 execute if entity @s[scores={swPool_firsthit=8}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Colour."}]
 
 execute if entity @s[scores={swPool_firsthit=-1}] run function pool:classes/master/endgame
+execute if entity @s[scores={swPool_firsthit=2}] as @e[scores={swPool_rank=2}] run data merge entity @s {CustomNameVisible:1b}
+execute if entity @s[scores={swPool_firsthit=3}] as @e[scores={swPool_rank=3}] run data merge entity @s {CustomNameVisible:1b}
+execute if entity @s[scores={swPool_firsthit=4}] as @e[scores={swPool_rank=4}] run data merge entity @s {CustomNameVisible:1b}
+execute if entity @s[scores={swPool_firsthit=5}] as @e[scores={swPool_rank=5}] run data merge entity @s {CustomNameVisible:1b}
+execute if entity @s[scores={swPool_firsthit=6}] as @e[scores={swPool_rank=6}] run data merge entity @s {CustomNameVisible:1b}
+execute if entity @s[scores={swPool_firsthit=7}] as @e[scores={swPool_rank=7}] run data merge entity @s {CustomNameVisible:1b}
+execute if entity @s[scores={swPool_firsthit=8}] as @e[scores={swPool_rank=2..7}] run data merge entity @s {CustomNameVisible:1b}
 
-
+schedule function pool:classes/master/hidename 3s
 
 
 #more messages...
@@ -91,6 +98,7 @@ tag @s remove swPool_firstcolor
 scoreboard players set @s swPool_nred 0
 scoreboard players set @s swPool_ncolor 0
 scoreboard players reset @s swPool_var05
-scoreboard players add Stroke swPool_Score 1
+scoreboard players add Stroke swPool_hidScore 1
 
-tellraw @a[tag=swPool_poolplay] [{"text":""},{"text":"[Command Window]","color":"","clickEvent":{"action":"run_command","value":"/function app:help/pool/commandwindow"}}]
+
+tellraw @a[tag=swPool_poolplay] [{"text":""},{"underlined":true,"text":"<Command Window>","color":"","clickEvent":{"action":"run_command","value":"/function app:help/pool/commandwindow"}},{"text":" ","underlined":false},{"underlined":true,"text":"</back>","color":"","clickEvent":{"action":"run_command","value":"/function pool:classes/master/redo"}}]

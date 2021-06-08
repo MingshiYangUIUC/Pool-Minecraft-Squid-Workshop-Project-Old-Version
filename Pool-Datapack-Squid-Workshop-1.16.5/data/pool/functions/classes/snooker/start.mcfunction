@@ -1,7 +1,8 @@
-execute unless entity @e[tag=swPool_pooltable] run tellraw @s [{"text":"Please place a table first","color":"red"}]
+execute unless entity @e[tag=swPool_pooltable] run tellraw @s [{"text":"Please place a table first.","color":"red"}]
 
 kill @e[tag=swPool_pool]
 kill @e[tag=swPool_pin]
+kill @e[tag=swPool_temppin]
 tag @a remove swPool_poolplay
 kill @e[tag=swPool_poolplay,type=area_effect_cloud]
 clear @a carrot_on_a_stick{CustomModelData:99}
@@ -17,8 +18,9 @@ tag @e[tag=swPool_pooltable] remove swPool_fouled
 tag @a remove swPool_hitcue
 
 tag @a[limit=1,sort=random] add swPool_poolplay
+execute if entity @e[tag=swPool_pooltable] unless entity @a[tag=!swPool_poolplay] run tellraw @s [{"text":"Not enough players, switched to singleplayer.","color":"red"}]
 execute unless entity @a[tag=!swPool_poolplay] run scoreboard players set Opponent swPool_Score 0
 execute if entity @a[tag=!swPool_poolplay] run tag @a[limit=1,sort=random,tag=!swPool_poolplay] add swPool_poolplay
 scoreboard objectives setdisplay sidebar swPool_Score
 
-scoreboard players set Stroke swPool_Score 0
+scoreboard players set Stroke swPool_hidScore 0

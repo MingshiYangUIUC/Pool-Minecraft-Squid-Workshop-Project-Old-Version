@@ -12,12 +12,12 @@ execute if entity @s[tag=swPool_multiplayer] as @a[tag=swPool_poolplay] run func
 
 
 scoreboard objectives setdisplay sidebar
-tellraw @a[tag=swPool_poolplay] [{"text":"Click to restart.","color":"gold","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/start"}}]
+tellraw @a[tag=swPool_poolplay] [{"underlined":true,"text":"<Restart Multiplayer>","color":"gold","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/start"}},{"text":" ","underlined":false},{"underlined":true,"text":"<Restart Singleplayer>","color":"yellow","clickEvent":{"action":"run_command","value":"/function pool:classes/snooker/startsp"}}]
 kill @e[tag=swPool_pin]
 scoreboard players reset @a[tag=swPool_poolplay] swPool_Score
 tag @a[tag=swPool_poolplay] remove swPool_poolplay
 
 scoreboard players reset @a swPool_Score
 scoreboard players reset Opponent swPool_Score
-scoreboard players reset Stroke swPool_Score
+scoreboard players reset Stroke swPool_hidScore
 

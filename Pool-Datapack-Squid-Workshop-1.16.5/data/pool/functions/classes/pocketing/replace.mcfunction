@@ -139,3 +139,12 @@ scoreboard players set @e[tag=swPool_brown,tag=swPool_pool] swPool_rank 4
 scoreboard players set @e[tag=swPool_blue,tag=swPool_pool] swPool_rank 5
 scoreboard players set @e[tag=swPool_pink,tag=swPool_pool] swPool_rank 6
 scoreboard players set @e[tag=swPool_black,tag=swPool_pool] swPool_rank 7
+
+
+
+execute as @e[scores={swPool_rank=2}] run data merge entity @s {CustomName:"\"2 Pts\""}
+execute as @e[scores={swPool_rank=3}] run data merge entity @s {CustomName:"\"3 Pts\""}
+execute as @e[scores={swPool_rank=4}] run data merge entity @s {CustomName:"\"4 Pts\""}
+execute as @e[scores={swPool_rank=5}] run data merge entity @s {CustomName:"\"5 Pts\""}
+execute as @e[scores={swPool_rank=6}] run data merge entity @s {CustomName:"\"6 Pts\""}
+execute as @e[scores={swPool_rank=7}] run data merge entity @s {CustomName:"\"7 Pts\""}

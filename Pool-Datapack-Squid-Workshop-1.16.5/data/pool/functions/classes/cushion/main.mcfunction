@@ -55,8 +55,8 @@ execute as @s[tag=swPool_cush] store result score @s swPool_posz run data get en
 
 scoreboard players operation @s[tag=swPool_cush] swPool_posx -= TABLE swPool_posx
 scoreboard players operation @s[tag=swPool_cush] swPool_posz -= TABLE swPool_posz
-tag @s[tag=swPool_x3,scores={swPool_posx=-1100..1100}] add swPool_pktm
-tag @s[tag=swPool_z3,scores={swPool_posz=-1100..1100}] add swPool_pktm
+tag @s[tag=swPool_x3,scores={swPool_posx=-1250..1250}] add swPool_pktm
+tag @s[tag=swPool_z3,scores={swPool_posz=-1250..1250}] add swPool_pktm
 
 #execute if entity @s[tag=swPool_x3] run tellraw @a [{"text":"swPool_posx is "},{"score":{"objective":"swPool_posx","name":"@s"}}]
 #execute if entity @s[tag=swPool_z3] run tellraw @a [{"text":"swPool_posz is "},{"score":{"objective":"swPool_posz","name":"@s"}}]

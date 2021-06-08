@@ -17,12 +17,12 @@ execute if entity @s[scores={swPool_var01=1562500..3124999}] run execute at @s r
 execute if entity @s[scores={swPool_var01=1562500..3124999}] run scoreboard players remove @s swPool_var01 1562500
 execute if entity @s[scores={swPool_var01=781250..1562499}] run execute at @s run tp @s ^ ^ ^0.0078125
 execute if entity @s[scores={swPool_var01=781250..1562499}] run scoreboard players remove @s swPool_var01 781250
-#execute if entity @s[scores={swPool_var01=390625..781249}] run execute at @s run tp @s ^ ^ ^0.00390625
-#execute if entity @s[scores={swPool_var01=390625..781249}] run scoreboard players remove @s swPool_var01 390625
-#execute if entity @s[scores={swPool_var01=195313..390624}] run execute at @s run tp @s ^ ^ ^0.00195313
-#execute if entity @s[scores={swPool_var01=195313..390624}] run scoreboard players remove @s swPool_var01 195313
-#execute if entity @s[scores={swPool_var01=97656..195312}] run execute at @s run tp @s ^ ^ ^0.00097656
-#execute if entity @s[scores={swPool_var01=97656..195312}] run scoreboard players remove @s swPool_var01 97656
+execute if entity @s[scores={swPool_var01=390625..781249}] run execute at @s run tp @s ^ ^ ^0.00390625
+execute if entity @s[scores={swPool_var01=390625..781249}] run scoreboard players remove @s swPool_var01 390625
+execute if entity @s[scores={swPool_var01=195313..390624}] run execute at @s run tp @s ^ ^ ^0.00195313
+execute if entity @s[scores={swPool_var01=195313..390624}] run scoreboard players remove @s swPool_var01 195313
+execute if entity @s[scores={swPool_var01=97656..195312}] run execute at @s run tp @s ^ ^ ^0.00097656
+execute if entity @s[scores={swPool_var01=97656..195312}] run scoreboard players remove @s swPool_var01 97656
 
 scoreboard players reset @s swPool_var01
 execute at @s if entity @e[tag=swPool_pool,distance=0.001..0.25] run function pool:classes/motion/retreat

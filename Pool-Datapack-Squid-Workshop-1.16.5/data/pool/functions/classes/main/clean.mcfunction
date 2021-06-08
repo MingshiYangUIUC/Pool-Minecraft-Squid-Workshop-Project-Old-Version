@@ -38,4 +38,4 @@ scoreboard objectives remove swPool_ontgt
 scoreboard objectives remove swPool_shoot
 scoreboard objectives remove swPool_crtclk
 scoreboard objectives remove swPool_sneaktime
-scoreboard objectives remove swPool_KE
+scoreboard objectives remove swPool_hidScore

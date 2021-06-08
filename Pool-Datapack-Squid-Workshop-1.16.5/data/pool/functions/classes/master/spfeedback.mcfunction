@@ -1,6 +1,6 @@
 scoreboard players operation @s swPool_Score -= Opponent swPool_Score
 #scoreboard players operation @s swPool_Score -= 27
-#scoreboard players operation Stroke swPool_Score -= 8
+#scoreboard players operation Stroke swPool_hidScore -= 8
 
 #execute if score TABLE swPool_dl matches 23750..43749 run scoreboard players set Nred swPool_var00 3
 #execute if score TABLE swPool_dl matches 43750..53749 run scoreboard players set Nred swPool_var00 10
@@ -9,7 +9,7 @@ scoreboard players operation @s swPool_Score -= Opponent swPool_Score
 scoreboard players set C1000 swPool_var00 1000
 scoreboard players operation @s swPool_Score *= C1000 swPool_var00
 #scoreboard players operation @s swPool_Score /= Nred swPool_var00
-scoreboard players operation @s swPool_Score /= Stroke swPool_Score
+scoreboard players operation @s swPool_Score /= Stroke swPool_hidScore
 
 #S+4000
 #S 3200

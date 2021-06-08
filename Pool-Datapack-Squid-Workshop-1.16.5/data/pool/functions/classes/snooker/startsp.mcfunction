@@ -2,6 +2,7 @@ execute unless entity @e[tag=swPool_pooltable] run tellraw @s [{"text":"Please p
 
 kill @e[tag=swPool_pool]
 kill @e[tag=swPool_pin]
+kill @e[tag=swPool_temppin]
 tag @a remove swPool_poolplay
 kill @e[tag=swPool_poolplay,type=area_effect_cloud]
 clear @a carrot_on_a_stick{CustomModelData:99}
@@ -21,4 +22,4 @@ tag @a[tag=swPool_near] remove swPool_near
 scoreboard players set Opponent swPool_Score 0
 scoreboard objectives setdisplay sidebar swPool_Score
 
-scoreboard players set Stroke swPool_Score 0
+scoreboard players set Stroke swPool_hidScore 0

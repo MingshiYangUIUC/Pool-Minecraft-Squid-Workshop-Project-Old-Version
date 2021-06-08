@@ -13,7 +13,7 @@ scoreboard players operation @s swPool_var00 += @s swPool_var01
 scoreboard players operation @s swPool_Score = @s swPool_var00
 scoreboard players set C500 swPool_var00 500
 scoreboard players operation @s swPool_Score *= C500 swPool_var00
-scoreboard players operation @s swPool_Score /= Stroke swPool_Score
+scoreboard players operation @s swPool_Score /= Stroke swPool_hidScore
 
 #S+4000
 #S 3200

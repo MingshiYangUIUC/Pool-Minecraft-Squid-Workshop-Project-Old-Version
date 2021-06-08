@@ -5,18 +5,7 @@
 #summon two new object for stationary frame calculation using swPool_vr only, and calculate resulting velocities
 #add back the initial velocity of c2, which is stored as component in swPool_vx, swPool_vz of c2
 
-scoreboard players reset @e[tag=swPool_rhp] swPool_v
-scoreboard players reset @e[tag=swPool_rhp] swPool_vx
-scoreboard players reset @e[tag=swPool_rhp] swPool_vz
-scoreboard players reset @e[tag=swPool_rhp] swPool_rot
-scoreboard players reset @e[tag=swPool_rhp] swPool_vr
-scoreboard players reset @e[tag=swPool_rhp] swPool_drot
-scoreboard players reset @e[tag=swPool_rhp] swPool_var00
-scoreboard players reset @e[tag=swPool_rhp] swPool_var01
-scoreboard players reset @e[tag=swPool_rhp] swPool_var02
-scoreboard players reset @e[tag=swPool_rhp] swPool_var03
-scoreboard players reset @e[tag=swPool_rhp] swPool_var04
-scoreboard players reset @e[tag=swPool_rhp] swPool_var05
+
 
 #set uuuuuuuuuuuuup
 tag @s add swPool_colliding
@@ -100,22 +89,8 @@ data modify entity @e[tag=swPool_c2,limit=1] Rotation set from entity @e[tag=swP
 tag @e[tag=swPool_rhp1] remove swPool_t1
 tag @e[tag=swPool_rhp2] remove swPool_t2
 tag @e[tag=swPool_rhp3] remove swPool_facerc
-kill @e[tag=swPool_t1]
-kill @e[tag=swPool_t2]
-kill @e[tag=swPool_facerc]
 #
-scoreboard players reset @e[tag=swPool_rhp] swPool_v
-scoreboard players reset @e[tag=swPool_rhp] swPool_vx
-scoreboard players reset @e[tag=swPool_rhp] swPool_vz
-scoreboard players reset @e[tag=swPool_rhp] swPool_rot
-scoreboard players reset @e[tag=swPool_rhp] swPool_vr
-scoreboard players reset @e[tag=swPool_rhp] swPool_drot
-scoreboard players reset @e[tag=swPool_rhp] swPool_var00
-scoreboard players reset @e[tag=swPool_rhp] swPool_var01
-scoreboard players reset @e[tag=swPool_rhp] swPool_var02
-scoreboard players reset @e[tag=swPool_rhp] swPool_var03
-scoreboard players reset @e[tag=swPool_rhp] swPool_var04
-scoreboard players reset @e[tag=swPool_rhp] swPool_var05
+
 
 #reset swPool_time, swPool_vr
 scoreboard players reset @s swPool_time

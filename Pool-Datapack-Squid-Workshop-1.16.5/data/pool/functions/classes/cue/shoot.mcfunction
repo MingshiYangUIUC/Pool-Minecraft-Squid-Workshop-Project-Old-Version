@@ -1,3 +1,6 @@
+
+function pool:classes/master/record
+
 tag @s add swPool_shooting
 execute as @e[type=arrow,distance=..5,nbt={life:0s}] if score @s swPool_player = @a[tag=swPool_shooting,limit=1] swPool_player run tag @s add swPool_sb
 
