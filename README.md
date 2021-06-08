@@ -30,7 +30,7 @@ Enable it by:
 	/datapack enable "datapackname"
   
 # Usage
-You will be displayed a piece of <ins>text</ins> to open "command window" after (re)loaded the datapack, try clicking on the texts and explore, or wait for the writeup.
+You will be displayed a piece of <<ins>text</ins>> to open "command window" after (re)loaded the datapack, try clicking on the texts and explore, or wait for the writeup.
 
 # How it Works
 Conservation of momentum. Neglected spins of balls, deformations, and interactions with edge of pockets. Assumed friction proportional to speed.
