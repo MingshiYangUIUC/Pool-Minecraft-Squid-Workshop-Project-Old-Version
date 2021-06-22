@@ -11,7 +11,22 @@ execute as @e[tag=swPool_pool] unless entity @s[nbt={ArmorItems:[{},{},{},{id:"m
 tag @e[tag=swPool_temppin] remove swPool_pool
 
 execute as @a[tag=poolplay] run scoreboard players operation @s swPool_hidScore = @s swPool_Score
-
 scoreboard players operation Opponent swPool_hidScore = Opponent swPool_Score
-
 scoreboard players operation StrokeRec swPool_hidScore = Stroke swPool_hidScore
+
+scoreboard players operation Pocketed_T_rec swPool_hidScore = Pocketed_Total swPool_hidScore
+
+tag @a remove swPool_redrec
+tag @a remove swPool_ylwrec
+tag @a remove swPool_blkrec
+tag @a remove swPool_stkrec
+tag @e[tag=swPool_pooltable] remove swPool_awdrec
+tag @e[tag=swPool_pooltable] remove swPool_edawdrec
+
+tag @a[tag=swPool_aimred] add swPool_redrec
+tag @a[tag=swPool_aimylw] add swPool_ylwrec
+tag @a[tag=swPool_aimblk] add swPool_blkrec
+tag @a[tag=swPool_streak] add swPool_stkrec
+
+tag @e[tag=swPool_awarded] add swPool_awdrec
+tag @e[tag=swPool_endaward] add swPool_edawdrec

@@ -39,7 +39,7 @@ execute at @e[tag=swPool_pool,tag=swPool_black,tag=!swPool_placed] run summon ar
 
 execute unless entity @e[tag=swPool_free] run scoreboard players set @s swPool_firsthit 1
 scoreboard players set @s swPool_var05 0
-execute unless entity @e[tag=swPool_free] run execute if entity @e[tag=swPool_pool] run tellraw @a [{"text":"Please place the cueball and aim for Red."}]
+execute unless entity @e[tag=swPool_free] run execute if entity @e[tag=swPool_pool] run tellraw @a [{"text":"Please place the cueball and aim at Red."}]
 scoreboard players set @e[tag=swPool_pool] swPool_v 0
 
 tag @e[tag=swPool_cue,tag=swPool_free] remove swPool_free

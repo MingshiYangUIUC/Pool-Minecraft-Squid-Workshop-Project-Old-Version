@@ -1,5 +1,8 @@
-execute if entity @s[tag=swPool_pktx,tag=swPool_pktz] run function pool:classes/pocketing/main
-execute if entity @s[tag=swPool_pktm] run function pool:classes/pocketing/main
+execute if entity @e[tag=swPool_snookermode] if entity @s[tag=swPool_pktx,tag=swPool_pktz] run function pool:classes/pocketing/snooker/main
+execute if entity @e[tag=swPool_snookermode] if entity @s[tag=swPool_pktm] run function pool:classes/pocketing/snooker/main
+execute if entity @e[tag=swPool_uk8ballmode] if entity @s[tag=swPool_pktx,tag=swPool_pktz] run function pool:classes/pocketing/uk8ball/main
+execute if entity @e[tag=swPool_uk8ballmode] if entity @s[tag=swPool_pktm] run function pool:classes/pocketing/uk8ball/main
+
 tag @s remove swPool_pktx
 tag @s remove swPool_pktz
 tag @s remove swPool_pktm

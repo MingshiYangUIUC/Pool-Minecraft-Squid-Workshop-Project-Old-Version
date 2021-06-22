@@ -1,6 +1,7 @@
 #put the object a1 to the cushion, and rotate it
 
-
+#if uk8ball: count cushion
+tag @e[tag=swPool_pooltable,tag=swPool_uk8ballmode,limit=1] add swPool_hitrail
 
 #put back position components
 #swPool_var00 is swPool_vx, swPool_var01 is swPool_vz

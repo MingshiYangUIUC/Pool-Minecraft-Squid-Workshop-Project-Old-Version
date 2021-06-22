@@ -39,6 +39,33 @@ scoreboard players operation Opponent swPool_Score = Opponent swPool_hidScore
 
 scoreboard players operation Stroke swPool_hidScore = StrokeRec swPool_hidScore
 
-tellraw @a[tag=swPool_poolplay] [{"text":"Done. The balls and scores have returned to their previous states."}]
+scoreboard players operation Pocketed_Total swPool_hidScore = Pocketed_T_rec swPool_hidScore
+
+tag @a remove swPool_freeball
+tag @a remove swPool_aimred
+tag @a remove swPool_aimylw
+tag @a remove swPool_aimblk
+tag @a remove swPool_streak
+tag @e[tag=swPool_pooltable] remove swPool_awarded
+tag @e[tag=swPool_pooltable] remove swPool_endaward
+
+tag @a[tag=swPool_redrec] add swPool_aimred
+tag @a[tag=swPool_ylwrec] add swPool_aimylw
+tag @a[tag=swPool_blkrec] add swPool_aimblk
+tag @a[tag=swPool_stkrec] add swPool_streak
+
+tag @e[tag=swPool_awdrec] add swPool_awarded
+tag @e[tag=swPool_edawdrec] add swPool_endaward
+
+tag @a remove swPool_redrec
+tag @a remove swPool_ylwrec
+tag @a remove swPool_blkrec
+tag @a remove swPool_stkrec
+tag @e[tag=swPool_pooltable] remove swPool_awdrec
+tag @e[tag=swPool_pooltable] remove swPool_edawdrec
+
+execute if entity @e[tag=swPool_pooltable,tag=swPool_snookermode] run tellraw @a[tag=swPool_poolplay] [{"text":"Done. The balls and scores have returned to their previous states."}]
+execute if entity @e[tag=swPool_pooltable,tag=swPool_uk8ballmode] run tellraw @a[tag=swPool_poolplay] [{"text":"Done. The balls and conditions have returned to their previous states."}]
+tellraw @a[tag=swPool_poolplay] [{"text":"The previous player, please try again."}]
 
 function pool:classes/master/record

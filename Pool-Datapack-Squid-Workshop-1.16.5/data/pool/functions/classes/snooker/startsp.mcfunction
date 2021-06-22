@@ -15,7 +15,21 @@ give @a[tag=swPool_freeball] carrot_on_a_stick{CustomModelData:99,display:{Name:
 
 tag @e[tag=swPool_pooltable] add swPool_start
 tag @e[tag=swPool_pooltable] remove swPool_fouled
+tag @e[tag=swPool_pooltable] remove swPool_pocketing
+tag @e[tag=swPool_pooltable] remove swPool_foulcolor
+tag @e[tag=swPool_pooltable] remove swPool_foulred
+tag @e[tag=swPool_pooltable] remove swPool_awarded
+tag @e[tag=swPool_pooltable] remove swPool_endaward
+tag @e[tag=swPool_pooltable] remove swPool_endgame
 tag @a remove swPool_hitcue
+tag @a remove swPool_aimred
+tag @a remove swPool_aimylw
+tag @a remove swPool_aimblk
+tag @a remove swPool_redrec
+tag @a remove swPool_ylwrec
+tag @a remove swPool_blkrec
+tag @e[tag=swPool_pooltable] remove swPool_awdrec
+tag @e[tag=swPool_pooltable] remove swPool_edawdrec
 
 tag @a[limit=1,tag=swPool_near] add swPool_poolplay
 tag @a[tag=swPool_near] remove swPool_near

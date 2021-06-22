@@ -13,13 +13,8 @@ tag @s add swPool_colliding
 #set information of first hit ball to swPool_player
 tag @s add swPool_c
 tag @e[tag=swPool_c2] add swPool_c
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_red,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 1
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_yellow,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 2
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_green,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 3
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_brown,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 4
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_blue,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 5
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_pink,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 6
-execute unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] if entity @e[tag=swPool_c,tag=swPool_black,limit=1] run scoreboard players set @a[tag=swPool_hitcue] swPool_firsthit 7
+execute if entity @e[tag=swPool_snookermode,limit=1] unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] run function pool:classes/collision/snooker_hitball
+execute if entity @e[tag=swPool_uk8ballmode,limit=1] unless entity @a[tag=swPool_hitcue,scores={swPool_firsthit=1..7}] if entity @e[tag=swPool_c,tag=swPool_cue,limit=1] run function pool:classes/collision/uk8ball_hitball
 tag @e[tag=swPool_c] remove swPool_c
 
 

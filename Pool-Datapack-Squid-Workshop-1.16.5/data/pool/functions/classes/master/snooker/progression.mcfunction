@@ -58,16 +58,16 @@ execute if entity @s[tag=swPool_fouled,tag=swPool_singleplayer] if entity @a[tag
 execute if entity @s[tag=swPool_fouled,tag=swPool_multiplayer] unless entity @a[tag=swPool_freeball] run tellraw @a[tag=swPool_poolplay] [{"text":"Foul. "},{"selector":"@a[tag=!swPool_hitcue,tag=swPool_poolplay]"},{"text":" "},{"score":{"objective":"swPool_foul","name":"@s"}},{"text":"."}]
 execute if entity @s[tag=swPool_fouled,tag=swPool_multiplayer] if entity @a[tag=swPool_freeball] run tellraw @a[tag=swPool_poolplay] [{"text":"Foul. "},{"selector":"@a[tag=!swPool_hitcue,tag=swPool_poolplay]"},{"text":" "},{"score":{"objective":"swPool_foul","name":"@s"}},{"text":", freeball."}]
 
-execute if entity @s[scores={swPool_firsthit=1}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Red."}]
-execute if entity @s[scores={swPool_firsthit=2}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Yellow."}]
-execute if entity @s[scores={swPool_firsthit=3}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Green."}]
-execute if entity @s[scores={swPool_firsthit=4}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Brown."}]
-execute if entity @s[scores={swPool_firsthit=5}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Blue."}]
-execute if entity @s[scores={swPool_firsthit=6}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Pink."}]
-execute if entity @s[scores={swPool_firsthit=7}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Black."}]
-execute if entity @s[scores={swPool_firsthit=8}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim for Colour."}]
+execute if entity @s[scores={swPool_firsthit=1}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Red."}]
+execute if entity @s[scores={swPool_firsthit=2}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Yellow."}]
+execute if entity @s[scores={swPool_firsthit=3}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Green."}]
+execute if entity @s[scores={swPool_firsthit=4}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Brown."}]
+execute if entity @s[scores={swPool_firsthit=5}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Blue."}]
+execute if entity @s[scores={swPool_firsthit=6}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Pink."}]
+execute if entity @s[scores={swPool_firsthit=7}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Black."}]
+execute if entity @s[scores={swPool_firsthit=8}] run tellraw @a[tag=swPool_poolplay] [{"score":{"objective":"swPool_var05","name":"@s"}},{"text":", Please aim at Colour."}]
 
-execute if entity @s[scores={swPool_firsthit=-1}] run function pool:classes/master/endgame
+execute if entity @s[scores={swPool_firsthit=-1}] run function pool:classes/master/snooker/endgame
 execute if entity @s[scores={swPool_firsthit=2}] as @e[scores={swPool_rank=2}] run data merge entity @s {CustomNameVisible:1b}
 execute if entity @s[scores={swPool_firsthit=3}] as @e[scores={swPool_rank=3}] run data merge entity @s {CustomNameVisible:1b}
 execute if entity @s[scores={swPool_firsthit=4}] as @e[scores={swPool_rank=4}] run data merge entity @s {CustomNameVisible:1b}
@@ -76,7 +76,7 @@ execute if entity @s[scores={swPool_firsthit=6}] as @e[scores={swPool_rank=6}] r
 execute if entity @s[scores={swPool_firsthit=7}] as @e[scores={swPool_rank=7}] run data merge entity @s {CustomNameVisible:1b}
 execute if entity @s[scores={swPool_firsthit=8}] as @e[scores={swPool_rank=2..7}] run data merge entity @s {CustomNameVisible:1b}
 
-schedule function pool:classes/master/hidename 3s
+schedule function pool:classes/master/snooker/hidename 3s
 
 
 #more messages...

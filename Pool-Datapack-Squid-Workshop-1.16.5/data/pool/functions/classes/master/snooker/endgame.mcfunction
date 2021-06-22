@@ -7,8 +7,8 @@ execute if entity @s[tag=swPool_multiplayer] as @a[tag=swPool_poolplay,tag=!swPo
 execute if entity @s[tag=swPool_multiplayer] as @a[tag=swPool_hitcue,limit=1] if score @s swPool_Score > @a[tag=swPool_poolplay,tag=!swPool_hitcue,limit=1] swPool_Score run tellraw @a[tag=swPool_poolplay] [{"selector":"@s","color":"yellow"},{"text":" won."}]
 execute if entity @s[tag=swPool_multiplayer] as @a[tag=swPool_hitcue,limit=1] if score @s swPool_Score = @a[tag=swPool_poolplay,tag=!swPool_hitcue,limit=1] swPool_Score run tellraw @a[tag=swPool_poolplay] [{"text":"Tied.","color":"yellow"}]
 
-execute if entity @s[tag=swPool_singleplayer] as @a[tag=swPool_poolplay] run function pool:classes/master/spfeedback
-execute if entity @s[tag=swPool_multiplayer] as @a[tag=swPool_poolplay] run function pool:classes/master/mpfeedback
+execute if entity @s[tag=swPool_singleplayer] as @a[tag=swPool_poolplay] run function pool:classes/master/snooker/spfeedback
+execute if entity @s[tag=swPool_multiplayer] as @a[tag=swPool_poolplay] run function pool:classes/master/snooker/mpfeedback
 
 
 scoreboard objectives setdisplay sidebar

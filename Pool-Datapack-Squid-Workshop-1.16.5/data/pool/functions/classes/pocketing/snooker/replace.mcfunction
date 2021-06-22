@@ -49,7 +49,7 @@ scoreboard players reset @e[tag=swPool_pool,tag=!swPool_red] swPool_rank
 
 #### ANOTHER discription of general swPool_foul:
 #when not hitting two types successively
-#pool:classes/master/progression
+#pool:classes/master/snooker/progression
 
 
 #add fouled tag and inherit / test optput messages
