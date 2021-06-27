@@ -35,9 +35,9 @@ You will be displayed a piece of <<ins>Clickable text</ins>> to open "command wi
 # How it Works
 Conservation of momentum. Neglected spins of balls, deformations, and interactions with edge of pockets. Assumed friction proportional to speed.
 
-I have not consulted any specific references while making it work. Wait for the writeup or search "simple billiards physics" online.
+I have not cited any specific references while making it work. Wait for the writeup or search "simple billiards physics" online.
 
-The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker has been simplified to meet popular common sense.
+The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker and [rules](https://en.wikipedia.org/wiki/Blackball_(pool)) of 8 ball have been simplified to meet popular common sense.
 
 # Project Tree
 Wait for the writeup
