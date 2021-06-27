@@ -39,6 +39,8 @@ I have not cited any specific references while making it work. Wait for the writ
 
 The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker and [rules](https://en.wikipedia.org/wiki/Blackball_(pool)) of 8 ball have been simplified to meet popular common sense.
 
+I suggest you try the [evolved version](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project/blob/main/README.md) if your device could handle!
+
 # Project Tree
 Wait for the writeup
 
