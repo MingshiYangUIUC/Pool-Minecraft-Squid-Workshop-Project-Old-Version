@@ -39,7 +39,7 @@ Conservation of momentum. Neglected spins of balls, deformations, and interactio
 
 I have not cited any specific references while making it work. Wait for the writeup or search "simple billiards physics" online.
 
-The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker and [rules](https://en.wikipedia.org/wiki/Blackball_(pool)) of 8 ball have been simplified to meet popular common sense.
+The [rules](https://en.wikipedia.org/wiki/Rules_of_snooker) of snooker and [rules](https://en.wikipedia.org/wiki/Blackball_(pool)) of 8 ball have been simplified to meet popular common sense. _The rule enforcement of 8 ball is still under development._
 
 I suggest you try the [evolved version](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project) if your device could handle!
 
