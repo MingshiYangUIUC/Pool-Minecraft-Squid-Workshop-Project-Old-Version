@@ -64,10 +64,10 @@ tag @e[tag=swPool_nxside,tag=swPool_pzside] add swPool_corner
 tag @e[tag=swPool_nxside,tag=swPool_nzside] add swPool_corner
 
 
-execute as @e[tag=swPool_side] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:10}}}
-execute as @e[tag=swPool_potl] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:11}}}
-execute as @e[tag=swPool_potr] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:12}}}
-execute as @e[tag=swPool_corner] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:13}}}
+execute as @e[tag=swPool_side] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:15}}}
+execute as @e[tag=swPool_potl] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:16}}}
+execute as @e[tag=swPool_potr] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:17}}}
+execute as @e[tag=swPool_corner] run data merge entity @s {Item:{id:"minecraft:acacia_button",Count:1b,tag:{CustomModelData:18}}}
 
 #execute as @e[tag=swPool_cloth] at @s run setblock ~ ~-1 ~ glass
 execute as @e[tag=swPool_cloth] at @s run setblock ~ ~ ~ iron_trapdoor[half=top]
