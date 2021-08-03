@@ -29,7 +29,9 @@ PS: If not working, check whether the datapack is enabled by:
 Enable it by:
 
 	/datapack enable "datapackname"
-  
+
+**The resourcepack is [here](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project).**
+
 # Usage
 You will be displayed a piece of <<ins>Clickable text</ins>> to open "command window" after (re)loaded the datapack, try clicking on the texts and explore, or wait for the writeup.
 
