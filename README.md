@@ -1,5 +1,7 @@
 # _Squid Workshop's_ Pool Datapack
-Play pool (cue sports) in Minecraft! Limited user guide, stopped updating. 游戏中帮助信息较少，已停更。
+Play pool (cue sports) in Minecraft! 
+Limited user guide, stopped updating. 游戏中帮助信息较少，已停更。
+[Evolved version 进化版](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project)
 
 - [Abstract](#Abstract)
 - [Installation](#Installation)
