@@ -1,7 +1,7 @@
 # _Squid Workshop's_ Pool Datapack
 Play pool (cue sports) in Minecraft!  \
-Limited user guide, stopped updating. 游戏中帮助信息较少，已停更。 \
-[Latest evolved version 持续更新进化版](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project)
+I kept this pack with limited function so less user guide, and it has stopped updating. 此数据包支持版本较低且功能简单，现已停更。 \
+[Latest evolved version - more realistic and more ways to have fun （持续更新中）进化版-更多玩法，更加真实](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project)
 
 - [Abstract](#Abstract)
 - [Installation](#Installation)
