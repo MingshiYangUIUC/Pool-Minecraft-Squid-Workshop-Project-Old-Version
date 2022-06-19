@@ -1,4 +1,4 @@
-# _Squid Workshop's_ Pool Datapack
+# _Squid Workshop's_ Pool Datapack Old Version 台球数据包旧版
 Play pool (cue sports) in Minecraft!  \
 I kept this pack with limited function so less user guide, and it has stopped updating. 此数据包支持版本较低且功能简单，现已停更。 \
 [Latest evolved version - more realistic and more ways to have fun （持续更新中）进化版-更多玩法，更加真实](https://github.com/MingshiYangUIUC/Pool-Evolved-Minecraft-Squid-Workshop-Project)
